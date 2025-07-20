@@ -1,4 +1,4 @@
-## Эмулятор BRICKGAME на язке С
+## Эмулятор BRICKGAME на языке С
 ### сейчас в нем 2 игры, тетрис и змейка, но есть возможность добавлять собственные
 ![Screenshot](screenshots/Screenshot1.png) ![Screenshot](screenshots/Screenshot2.png)
 
