@@ -17,7 +17,7 @@
 + деструктор игры: **extern void example_game_destr();**
 + главный цикл игры: **extern void example_game_main_loop(unsigned long elapsed_ms);**
 + обработчик нажатия клавиш: **extern void example_game_on_key_pressed(int key_code);**
-```
+```c
 #ifndef __EXAMPLE_GAME_H__
 #define __EXAMPLE_GAME_H__
 
@@ -48,7 +48,7 @@ extern void example_game_on_key_pressed(int key_code);
 реализация функций, файл: **example_game.c**
 в примере игры по центру рисуется квадрат, который перемещается при нажатии клавиш стрелок
 
-```
+```c
 #include "example_game.h"
 
 // координаты квадрата
@@ -127,11 +127,11 @@ void example_game_on_key_pressed(int key_code) {
 }
 ```
 подключаем игру в файле **launcher.c** новая игра будет под номером 3
-```
+```c
  bg_add_game(&example_game_init, &example_game_destr, &example_game_main_loop, &example_game_on_key_pressed);
 
 ```
-```
+```c
 #include "brickgame.h"
 #include "games/snake.h"
 #include "games/tetris.h"
